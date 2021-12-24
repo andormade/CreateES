@@ -19072,7 +19072,7 @@ createjs.deprecate = function(fallbackMethod, name) {
 	 * @protected
 	 */
 	p._isCanceled = function () {
-		if (window.createjs == null || this.canceled) {
+		if (this.canceled) {
 			return true;
 		}
 		return false;
